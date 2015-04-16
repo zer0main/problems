@@ -1,2 +1,3 @@
 # problems
-Solutions of complicated problems; implementations of algortihms
+Solutions of complicated problems; implementations of
+algorithms
