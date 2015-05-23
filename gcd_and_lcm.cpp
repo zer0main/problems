@@ -21,15 +21,20 @@ int lcm(int a, int b) {
     return (a * b) / gcd(a, b);
 }
 
-void lcmAndGcd(int* arr, int size) {
-    int lcm1 = lcm(arr[0], arr[1]);
+int arrayGcd(int* arr, int size) {
     int gcd1 = gcd(arr[0], arr[1]);
     for (int i = 2; i < size; i++) {
-        lcm1 = lcm(lcm1, arr[i]);
         gcd1 = gcd(gcd1, arr[i]);
     }
-    std::cout << lcm1 << std::endl;
-    std::cout << gcd1 << std::endl;
+    return gcd1;
+}
+
+void arrayLcm(int* arr, int size) {
+    int lcm1 = lcm(arr[0], arr[1]);
+    for (int i = 2; i < size; i++) {
+        lcm1 = lcm(lcm1, arr[i]);
+    }
+    return lcm1;
 }
 
 int main() {
@@ -39,7 +44,10 @@ int main() {
     for (int i = 0; i < n; i++) {
         std::cin >> arr[i];
     }
-    lcmAndGcd(arr, n);
+    int gcd_number = arrayGcd(arr, n);
+    int lcm_number = arrayLcm(arr, n);
+    std::cout << lcm_number << std::endl;
+    std::cout << gcd_number << std::endl;
     delete[] arr;
     return 0;
 }
