@@ -6,6 +6,7 @@
 
 #include <iostream>
 
+/* gcd means "greatest common divisor" */
 int gcd(int a, int b) {
     while (b) {
         int temp = b;
@@ -15,6 +16,7 @@ int gcd(int a, int b) {
     return a;
 }
 
+/* lcm means "least common multiple" */
 int lcm(int a, int b) {
     return (a * b) / gcd(a, b);
 }
