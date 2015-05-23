@@ -29,7 +29,7 @@ int arrayGcd(int* arr, int size) {
     return gcd1;
 }
 
-void arrayLcm(int* arr, int size) {
+int arrayLcm(int* arr, int size) {
     int lcm1 = lcm(arr[0], arr[1]);
     for (int i = 2; i < size; i++) {
         lcm1 = lcm(lcm1, arr[i]);
