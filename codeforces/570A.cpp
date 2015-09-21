@@ -1,3 +1,11 @@
+/*
+ * Copyright (C) 2015 Pavel Dolgov
+ *
+ * See the LICENSE file for terms of use.
+ */
+
+/* http://codeforces.com/contest/570/submission/13120174 */
+
 #include <iostream>
 #include <vector>
 
