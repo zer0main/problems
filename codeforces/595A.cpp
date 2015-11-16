@@ -4,7 +4,7 @@
  * See the LICENSE file for terms of use.
  */
 
-/* http://codeforces.com/contest/556/submission/14302773 */
+/* http://codeforces.com/contest/595/submission/14302773 */
 
 #include <bits/stdc++.h>
 

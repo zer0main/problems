@@ -4,7 +4,7 @@
  * See the LICENSE file for terms of use.
  */
 
-/* http://codeforces.com/contest/527/submission/13054549 */
+/* http://codeforces.com/contest/576/submission/13054549 */
 
 #include <iostream>
 #include <vector>
