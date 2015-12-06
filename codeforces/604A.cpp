@@ -1,3 +1,11 @@
+/*
+ * Copyright (C) 2015 Pavel Dolgov
+ *
+ * See the LICENSE file for terms of use.
+ */
+
+/* http://codeforces.com/contest/604/submission/14700275 */
+
 #include <bits/stdc++.h>
 
 #define SIZE 5
