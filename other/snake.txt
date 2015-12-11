@@ -1,0 +1,13 @@
+So, here's the problem:
+
+   0  1  2  3  4  5
+  -----------------
+0| 1  2  6  7  15 16
+1| 3  5  8  14 ...
+2| 4  9  13 ...
+3| 10 12 ...
+4| 11 ...
+
+You have some number n from this sequence (from snake's "track").
+Compute x and y (indices of n). For example: 13 ---> 2, 2
+Your solution must run in constant time.
