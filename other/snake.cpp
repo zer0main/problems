@@ -4,6 +4,7 @@
  * See the LICENSE file for terms of use.
  */
 
+// See snake.txt
 #include <bits/stdc++.h>
 
 typedef long long int lint;
