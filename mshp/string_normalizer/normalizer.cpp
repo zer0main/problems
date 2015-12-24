@@ -1,3 +1,9 @@
+/*
+ * Copyright (C) 2015 Pavel Dolgov
+ *
+ * See the LICENSE file for terms of use.
+ */
+
 #include <bits/stdc++.h>
 
 std::string deleteBoundarySpaces(const std::string& str) {
