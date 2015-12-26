@@ -29,11 +29,11 @@ std::string correctUppers(const std::string& str) {
     return result;
 }
 
-std::string deleteBoundarySpaces(const std::string& str) {
+std::string clearBorders(const std::string& str) {
     int size = str.size();
     std::string result;
     int begin = 0;
-    while (isspace(str[begin])) {
+    while (!isalnum(str[begin])) {
         begin++;
     }
     int end = size - 1;
@@ -65,7 +65,7 @@ std::string deleteExtraSpaces(const std::string& str) {
 }
 
 std::string correct(const std::string& str) {
-    std::string value = deleteBoundarySpaces(str);
+    std::string value = clearBorders(str);
     return deleteExtraSpaces(value);
 }
 
