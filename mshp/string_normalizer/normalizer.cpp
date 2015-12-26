@@ -6,6 +6,29 @@
 
 #include <bits/stdc++.h>
 
+std::string correctUppers(const std::string& str) {
+    // a single-character delimiters between sentences
+    static const char* delimiters = {'.', '?', '!'};
+    int size = str.size();
+    std::string result;
+    bool new_sentence = false;
+    result.push_back(toupper(str[0]));
+    for (int pos = 1; pos < size; pos++) {
+        for (int i = 0; i < 3; i++) {
+            if (str[pos] == delimiters[i]) {
+                new_sentence = true;
+            }
+        }
+        if (islower(str[pos]) && new_sentence) {
+            result.push_back(toupper(str[pos]));
+            new_sentence = false;
+        } else {
+            result.push_back(str[pos]);
+        }
+    }
+    return result;
+}
+
 std::string deleteBoundarySpaces(const std::string& str) {
     int size = str.size();
     std::string result;
