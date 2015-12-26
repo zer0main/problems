@@ -12,7 +12,9 @@ std::string correctUppers(const std::string& str) {
     size_t size = str.size();
     std::string result;
     bool new_sentence = false;
-    result.push_back(toupper(str[0]));
+    if (size != 0) {
+        result.push_back(toupper(str[0]));
+    }
     for (size_t pos = 1; pos < size; pos++) {
         for (int i = 0; i < 3; i++) {
             if (str[pos] == delimiters[i]) {
@@ -30,17 +32,17 @@ std::string correctUppers(const std::string& str) {
 }
 
 std::string clearBorders(const std::string& str) {
-    size_t size = str.size();
+    int size = str.size();
     std::string result;
-    size_t begin = 0;
+    int begin = 0;
     while ((begin < size) && !isalnum(str[begin])) {
         begin++;
     }
-    size_t end = size - 1;
+    int end = size - 1;
     while ((end >= 0) && isspace(str[end])) {
         end--;
     }
-    for (size_t i = begin; i <= end; i++) {
+    for (int i = begin; i <= end; i++) {
         result.push_back(str[i]);
     }
     return result;
