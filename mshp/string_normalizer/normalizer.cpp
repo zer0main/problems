@@ -9,7 +9,7 @@
 std::string correctUppers(const std::string& str) {
     // a single-character delimiters between sentences
     static const char delimiters[] = {'.', '?', '!'};
-    int size = str.size();
+    size_t size = str.size();
     std::string result;
     bool new_sentence = false;
     result.push_back(toupper(str[0]));
@@ -30,14 +30,14 @@ std::string correctUppers(const std::string& str) {
 }
 
 std::string clearBorders(const std::string& str) {
-    int size = str.size();
+    size_t size = str.size();
     std::string result;
-    int begin = 0;
-    while (!isalnum(str[begin])) {
+    size_t begin = 0;
+    while ((begin < size) && !isalnum(str[begin])) {
         begin++;
     }
-    int end = size - 1;
-    while (isspace(str[end])) {
+    size_t end = size - 1;
+    while ((end >= 0) && isspace(str[end])) {
         end--;
     }
     for (size_t i = begin; i <= end; i++) {
