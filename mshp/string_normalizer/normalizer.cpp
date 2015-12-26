@@ -8,12 +8,12 @@
 
 std::string correctUppers(const std::string& str) {
     // a single-character delimiters between sentences
-    static const char* delimiters = {'.', '?', '!'};
+    static const char delimiters[] = {'.', '?', '!'};
     int size = str.size();
     std::string result;
     bool new_sentence = false;
     result.push_back(toupper(str[0]));
-    for (int pos = 1; pos < size; pos++) {
+    for (size_t pos = 1; pos < size; pos++) {
         for (int i = 0; i < 3; i++) {
             if (str[pos] == delimiters[i]) {
                 new_sentence = true;
