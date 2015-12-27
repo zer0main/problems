@@ -102,8 +102,11 @@ std::string deleteExtraSpaces(const std::string& str) {
 }
 
 std::string correct(const std::string& str) {
-    std::string value = clearBorders(str);
-    return deleteExtraSpaces(value);
+    std::string fix = clearBorders(str);
+    fix = deleteExtraSpaces(fix);
+    fix = deleteExtraPunctuation(fix);
+    fix = correctUppers(fix);
+    return fix;
 }
 
 int main() {
