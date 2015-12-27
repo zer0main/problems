@@ -48,6 +48,41 @@ std::string clearBorders(const std::string& str) {
     return result;
 }
 
+std::string deleteExtraPunctuation(const std::string& str) {
+    int size = str.size();
+    std::string result;
+    for (int pos = 0; pos < size; pos++) {
+        if ((pos < size - 1) && ispunct(str[pos + 1])) {
+            if (!isspace(str[pos]) && !ispunct(str[pos])) {
+                result.push_back(str[pos]);
+            } else if ((str[pos] == '.') ||
+                       (str[pos] == '!')) {
+                // ... or !!! exceptions
+                int index = pos;
+                while ((index < size) &&
+                       (str[pos] == str[index])) {
+                    index++;
+                }
+                if ((index - pos) == 3) {
+                    result += std::string(str[pos], 3);
+                } else {
+                    result += str[pos];
+                }
+                pos = index - 1;
+            } else if (str[pos] == '?') {
+                // ?! exception
+                if (str[pos+ 1] == '!') {
+                    result += "?!";
+                    pos += 1;
+                }
+            }
+        } else {
+            result.push_back(str[pos]);
+        }
+    }
+    return result;
+}
+
 std::string deleteExtraSpaces(const std::string& str) {
     size_t size = str.size();
     std::string result;
