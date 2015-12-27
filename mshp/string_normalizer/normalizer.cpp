@@ -64,7 +64,7 @@ std::string deleteExtraPunctuation(const std::string& str) {
                     index++;
                 }
                 if ((index - pos) == 3) {
-                    result += std::string(str[pos], 3);
+                    result += std::string(3, str[pos]);
                 } else {
                     result += str[pos];
                 }
