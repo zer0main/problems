@@ -1,5 +1,0 @@
-1. Cleanup (delete extra spaces and punctuation, correct uppers and lowers etc)
-2. Delete some shit (88005553535 -> 112)
-3. Alphabet
-4. Dictionary
-5. Proper names
