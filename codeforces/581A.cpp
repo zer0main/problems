@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Pavel Dolgov
+ * Copyright (C) 2015-2016 Pavel Dolgov
  *
  * See the LICENSE file for terms of use.
  */
