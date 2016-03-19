@@ -12,6 +12,10 @@ public:
         std::cout << "Foo's constructor." << std::endl;
     }
 
+    Foo(int n) {
+        std::cout << "Foo's int constructor." << std::endl;
+    }
+
     ~Foo() {
         std::cout << "Foo's destructor." << std::endl;
     }
@@ -85,6 +89,12 @@ public:
     }
 };
 
+template<typename D>
+SharedPtr<D> makeShared(int arg) {
+    SharedPtr<D> ptr = SharedPtr<Foo>(new D(arg));
+    return ptr;
+}
+
 int main() {
     std::cout << "zer0main's shared pointer" << std::endl;
     SharedPtr<Foo> foo_ptr = SharedPtr<Foo>(new Foo());
@@ -100,5 +110,7 @@ int main() {
     std::cout << "foo_ptr3 is empty: " << foo_ptr3.empty() << std::endl;
     foo_ptr3 = foo_ptr2;
     std::cout << "foo_ptr3 is empty: " << foo_ptr3.empty() << std::endl;
+    SharedPtr<Foo> foo_ptr4 = makeShared<Foo>(2);
+    std::cout << "foo_ptr4 is empty: " << foo_ptr4.empty() << std::endl;
     return 0;
 }
