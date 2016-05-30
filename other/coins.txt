@@ -6,3 +6,16 @@ Two consecutive coin flips give us 4 combinations (head-head, tail-tail,
 head-tail, tail-head). We can exclude one of these combinations
 (just start everything from the beginning in the case of an
 unwanted combination). We get three equally probable outcomes.
+
+2. Problem: make normal coin (1/2) from a wrong coin (unknown probability).
+
+Solution.
+---------
+Probabilities of independent events are multiplied.
+After two consecutive coin flips:
+ - probability of tail-head P1 = x * (1 - x)
+ - probability of head-tail P2 = (1 - x) * x
+where x -- probability of tail.
+So P1 = P2.
+We can exclude head-head and tail-tail and
+get two equally probable outcomes.
