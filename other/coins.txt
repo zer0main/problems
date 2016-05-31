@@ -9,8 +9,8 @@ unwanted combination). We get three equally probable outcomes.
 
 2. Problem: make normal coin (1/2) from a wrong coin (unknown probability).
 
-Solution.
----------
+Solution
+--------
 Probabilities of independent events are multiplied.
 After two consecutive coin flips:
  - probability of tail-head P1 = x * (1 - x)
@@ -19,3 +19,15 @@ where x -- probability of tail.
 So P1 = P2.
 We can exclude head-head and tail-tail and
 get two equally probable outcomes.
+
+3. Problem: make generator of given probability using the normal coin (1/2).
+   Given probability can be irrational (for example 1 / Pi).
+
+Solution
+--------
+1) translate number into binary form
+2) toss coin; compare with the current bit of a number
+   in case of match -> next bit
+   otherwise -> return one of outcomes
+
+See coin.cpp for code (the last problem).
