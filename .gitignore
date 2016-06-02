@@ -1,0 +1,13 @@
+# vim
+*.swp
+*.swo
+
+# build
+*.so
+*.o
+*.elf
+
+# gcov
+*.gcda
+*.gcno
+*.gcov
