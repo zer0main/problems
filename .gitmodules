@@ -1,0 +1,3 @@
+[submodule "other/hanoi_tower"]
+	path = other/hanoi_tower
+	url = https://github.com/zer0main/hanoi_tower
