@@ -1,3 +1,6 @@
 [submodule "other/hanoi_tower"]
 	path = other/hanoi_tower
 	url = https://github.com/zer0main/hanoi_tower
+[submodule "other/radix_translator"]
+	path = other/radix_translator
+	url = https://github.com/zer0main/radix_translator
