@@ -4,3 +4,6 @@
 [submodule "other/radix_translator"]
 	path = other/radix_translator
 	url = https://github.com/zer0main/radix_translator
+[submodule "other/python-scripts"]
+	path = other/python-scripts
+	url = https://github.com/zer0main/python-scripts
