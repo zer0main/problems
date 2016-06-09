@@ -7,3 +7,6 @@
 [submodule "other/python-scripts"]
 	path = other/python-scripts
 	url = https://github.com/zer0main/python-scripts
+[submodule "other/caesar"]
+	path = other/caesar
+	url = https://github.com/zer0main/caesar
