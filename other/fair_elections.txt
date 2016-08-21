@@ -1,10 +1,11 @@
 Problem
 -------
 There are N servers. You need to invent an algorithm of single
-server elections. There are some crooks among servers (but not
+server elections. There are some cheaters among servers (but not
 the majority!).
+
 You have:
- - TCP connection between servers
- - Every server has PGP key
- - Every server has list of public PGP keys of other servers
+ - Connectivity between servers
+ - Eeach server has RSA key
+ - Eeach server has a list of public RSA keys of other servers
  - All the strength of cryptography
