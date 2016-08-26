@@ -42,3 +42,14 @@ Let's organize Olympic system tournament:
 
 2) We have single winner of Olympic system tournament so
     we've solved the problem.
+
+Discussion
+----------
+The power of two problem: servers can't divide into pairs if their
+quantity isn't a power of two.
+
+Score points help us to solve problems with power of two when
+use Olympic system tournament. Excess servers (which don't play
+in some tournaments because of power of two problem) don't get
+score points in this tournament so when they fight with winners
+of this tournament, they have less chances to win.
