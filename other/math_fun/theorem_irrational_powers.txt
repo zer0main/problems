@@ -1,0 +1,6 @@
+ASSERT(A, B): A ** B = C, where A and B are irrational and C is rational.
+
+PROOF:
+If (√2) ** (√2) is rational, we have nothing to prove.
+Otherwise, let's raise it to the power √2:
+((√2) ** (√2)) ** (√2) = (√2)**2 = 2, so we have nothing to prove as well.
