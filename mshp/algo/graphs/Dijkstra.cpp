@@ -19,7 +19,7 @@ int Dijkstra() {
     for (int i = 0; i < N; i++) {
         int v = -1;
         for (int j = 0; j < N; j++) {
-            if (!u[j] && ((dist[j] < dist[v]) || v == -1)) {
+            if (!u[j] && ((v == -1) || (dist[j] < dist[v]))) {
                 v = j;
             }
         }
