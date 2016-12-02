@@ -23,11 +23,11 @@ int Dijkstra() {
                 v = j;
             }
         }
-        if (v == finish) {
-            return dist[v];
-        }
         if (dist[v] == MAX_LENGTH) {
             break;
+        }
+        if (v == finish) {
+            return dist[v];
         }
         u[v] = true;
         for (int j = 0; j < N; j++) {
