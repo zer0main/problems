@@ -31,8 +31,9 @@ int Dijkstra() {
         }
         u[v] = true;
         for (int j = 0; j < N; j++) {
-            if (g[v][j] && (dist[j] > (dist[v] + 1))) {
-                dist[j] = dist[v] + 1;
+            // -1 - no path
+            if ((g[v][j] >= 0) && (dist[j] > (dist[v] + g[v][j]))) {
+                dist[j] = dist[v] + g[v][j];
             }
         }
     }
@@ -40,14 +41,13 @@ int Dijkstra() {
 }
 
 int main() {
-    std::cin >> N;
+    std::cin >> N >> start >> finish;
+    start--; finish--;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             std::cin >> g[i][j];
         }
     }
-    std::cin >> start >> finish;
-    start--; finish--;
     for (int i = 0; i < N; i++) {
         u[i] = false;
         dist[i] = MAX_LENGTH;
