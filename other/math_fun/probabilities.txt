@@ -5,3 +5,8 @@ There're K experiments with 2 possible results. The probability
 of posistive one is N. Calculate the probability that M-th
 success will take place exactly at K-th experiment.
 
+Solution
+========
+
+ANS = (N ** K) * ((1 - N) ** (M - K)) * C(K - 1; M - 1) =
+= (N ** K) * (((1 - N) ** (M - K)) * (M - 1)!) / ((M - K)! * (K - 1)!)
