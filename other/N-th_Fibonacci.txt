@@ -1,0 +1,2 @@
+The N-th Fibonacci number in O (log N):
+https://habrahabr.ru/post/148336/
