@@ -1,0 +1,26 @@
+Problem
+=======
+
+Input: array of integers G; X
+Output: find 2 elements A and B in the given array for which
+        (A XOR B == X) is true.
+
+Comment: DO NOT suggest O(N * N), *geniuses*!
+
+Solution
+========
+
+1) Make array C (C[i] = (G[i] XOR X)).
+2) Find equal elements of C and G.
+   Let's say we have (C[i] == G[x]):
+   G[x] and G[i] - our ANSWER.
+
+`2` can be done in 2 ways:
+
+A: Make hash table from one of arrays.
+   Check all the elements of another array for being present in
+   the hash table.
+Comment: worst cases suck, yeah!
+
+B: Combine arrays, store indices, do count sort, check nearby elements for equality.
+Comment: memory... :(
