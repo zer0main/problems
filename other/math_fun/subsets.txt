@@ -1,10 +1,10 @@
-Number of subsequences in the sequence which has N elements:
+Number of subsets in the set which has N elements:
 
 `2 ** (N)`
 
 Interesting notes:
 
-N    N_by_types     N_of_subsequences(N)
+N    N_by_types     N_of_subsets(N)
 ----------------------------------------
 2  |  1 2 1       | 2 ** 2 = 4
 3  |  1 3 3 1     | 2 ** 3 = 8
