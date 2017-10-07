@@ -1,0 +1,11 @@
+Prove that √2 is irrational.
+
+Solution
+
+If √2 IS rational, then for some integers a and b √2 = a / b, and
+the fraction can not be reduced.
+Hence a * a = 2 * b * b => a * a is even => a is even.
+Hence a can be represented as 2 * k.
+Hence a * a is equal to 4 * k * k => 2 * k * k = b * b =>
+=> b * b is even => b is even too => both a and b are even =>
+a / b CAN BE reduced => oops, we have a contradiction!
