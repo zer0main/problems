@@ -1,0 +1,11 @@
+PROBLEM
+In some country people live (for a long time) following the rules:
+each family gives birth to children until the first boy.
+Only girls and boys may born (no twins etc), they born with equal
+chances. The mortality rate does not depend on gender.
+What is the proportion of male population in this country?
+
+SOLUTION
+It's a problem with a trap. The Rule of single boy per family does
+not affect the probability of boys to born in general in whole country.
+The correct answer is 50%.
