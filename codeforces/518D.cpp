@@ -1,4 +1,4 @@
-/* http://codeforces.com/contest/518/submission/43627559 */
+/* http://codeforces.com/contest/518/submission/43627738 */
 
 #include <bits/stdc++.h>
 
@@ -24,13 +24,13 @@ int main() {
                 max_folks = n;
             }
             for (int j = 0; j <= max_folks; j++) {
-                double entered = probabilities[i - 1][j - 1] * p;
+                double entered = 0;
                 double stayed = probabilities[i - 1][j] * (1 - p);
                 if (j == n) {
                     stayed = probabilities[i - 1][j];
                 }
-                if (j == 0) {
-                    entered = 0;
+                if (j != 0) {
+                    entered = probabilities[i - 1][j - 1] * p;
                 }
                 probabilities[i][j] = entered + stayed;
             }
